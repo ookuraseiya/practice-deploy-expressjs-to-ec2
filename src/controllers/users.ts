@@ -5,7 +5,6 @@ dotenv.config();
 
 const router: Router = express.Router();
 
-// 2. process.env を使って接続設定を書く
 const connection = mysql.createConnection({
   host: process.env.MYSQL_HOST,
   user: process.env.MYSQL_USER,
