@@ -36,4 +36,22 @@ router.get('/', (_req: Request, res: Response) => {
   });
 });
 
+// データ追加
+router.post('/', (req: Request, res: Response) => {
+  const connection = mysql.createConnection(dbConfig);
+  const { id, todo } = req.body;
+
+  connection.query(
+    'INSERT INTO todo (id, todo) VALUES (?, ?)',
+    [id, todo],
+    (err, results) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send(err);
+      }
+      res.send({ message: '追加成功', results });
+    }
+  );
+});
+
 export default router;
