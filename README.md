@@ -16,4 +16,4 @@ coming soon...
 - インフラ
   - EC2（アプリケーションサーバ）
   - RDS（データベース・MySQL）
-  - VPC / Subnet（Public構成）
+  - VPC / Subnet（Public・Private構成）
