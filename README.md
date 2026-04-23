@@ -1,4 +1,4 @@
-# 🚀 Next.js × AWS デプロイ構成（EC2 + RDS）
+# 🚀 Express.js × AWS デプロイ構成（EC2 + RDS）
 ## 📌 概要
 
 過去に業務でAWSを使用していましたが、期間が空いてしまったため、
